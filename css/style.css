@@ -15,10 +15,16 @@
   background-image: url(../img/pattern_1.png);
 }
 
-.bg-pattern-color
+.bg-pattern-yellow
 {
   background-repeat: repeat;
   background-image: url(../img/pattern_2.png);
+}
+
+.bg-pattern-primary
+{
+  background-repeat: repeat;
+  background-image: url(../img/pattern_3.png);
 }
 
 .bg-light-yellow
