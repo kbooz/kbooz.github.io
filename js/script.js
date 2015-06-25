@@ -118,7 +118,7 @@ function getUrlParameter(sParam)
 	}
 }
 
-
+// Overlay
 
 $(".fruta").click(function(e){
   e.preventDefault();
@@ -145,3 +145,28 @@ $("#hide").click(function(){
   $("#overlay-wrapper").children().hide();
   $("#hide").show();
 })
+
+// Chart
+var data = [
+    {
+        value: 300,
+        color:"#F7464A",
+        highlight: "#FF5A5E",
+        label: "Red"
+    },
+    {
+        value: 50,
+        color: "#46BFBD",
+        highlight: "#5AD3D1",
+        label: "Green"
+    },
+    {
+        value: 100,
+        color: "#FDB45C",
+        highlight: "#FFC870",
+        label: "Yellow"
+    }
+]
+var ctx = $("#concentracao-organico-chart").get(0).getContext("2d");
+// This will get the first returned node in the jQuery collection.
+var myNewChart = new Chart(ctx).Pie(data,{});

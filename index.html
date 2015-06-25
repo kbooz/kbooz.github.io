@@ -50,7 +50,7 @@
       &#x2718;
     </div>
       <div id="overlay-harmonia" class="overlay-content-box">
-        A agricultura orgânica é o sistema de produção que exclui o uso de fertilizantes sintéticos de alta solubilidade, agrotóxicos, reguladores de crescimento e aditivos para a alimentação animal, compostos sinteticamente. Sempre que possível, baseia-se no uso de estercos animais, rotação de culturas, adubação verde, compostagem e controle biológico de pragas e doenças. Busca manter a estrutura e produtividade do solo, trabalhando em harmonia com a natureza.
+        A agricultura orgânica é o sistema de produção que exclui o uso de fertilizantes, agrotóxicos, reguladores de crescimento e aditivos sintéticos para a alimentação animal. Sempre que possível, baseia-se no uso de estercos animais, rotação de culturas, adubação verde, compostagem e controle biológico de pragas e doenças. Busca manter a estrutura e produtividade do solo, trabalhando em harmonia com a natureza.
       </div>
       <div id="overlay-concentracao" class="overlay-content-box">
           CONCENTRAÇÃO PORRA
@@ -183,19 +183,22 @@
   <section class="bg-primary" id="organico-diferenca">
     <div class="container">
       <div class="row text-center">
-        <div class="col-lg-6 col-md-4 text-center">
+        <div class="col-lg-6 col-md-6 text-center">
           <div class="service-box">
             <img src="" class="fruta happy surpreso">
             <h3>Organicos</h3>
-            <p></p>
+            <ul class="checklist">
+              <li>A</li>
+            </ul>
           </div>
         </div>
-        <div class="col-lg-6 col-md-4 text-center">
+        <div class="col-lg-6 col-md-6 text-center">
           <div class="service-box">
             <img src="" class="fruta breathing convencional">
             <h3>Convencionais</h3>
             <p></p>
           </div>
+          <br>
         </div>
         <a id="link-diferenca" href="#organico-diferenca" class="btn btn-default btn-xl page-scroll">Diferença?</a>
       </div>
@@ -238,17 +241,14 @@
       </div>
       <div class="row no-gutter text-center">
         <div class="col-lg-6 col-sm-6 text-center">
-          <div id="concentracao-organicos"></div>
           <h3>Organicos</h3>
-          <ul data-pie-id>
-          </ul>
+          <canvas id="concentracao-organico-chart" width="200" height="200"></canvas>
 
         </div>
         <div class="col-lg-6 col-sm-6 text-center">
-          <div id="concentracao-convencional"></div>
           <h3>Convencionais</h3>
-          <ul data-pie-id="concentracao-convencional" data-o>
-          </ul>
+          <canvas id="concentracao-convencional-chart" width="200" height="200"></canvas>
+
         </div>
         <a id="link-concentracao" href="#organico-concentracao" class="btn btn-default btn-xl page-scroll">Concentração?</a>
       </div>
@@ -263,6 +263,7 @@
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/jquery.fittext.min.js"></script>
 <script src="js/wow.min.js"></script>
+<script src="js/chart.js"></script>
 <script src="js/script.js"></script>
 
 </body>

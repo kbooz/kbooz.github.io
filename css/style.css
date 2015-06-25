@@ -110,4 +110,5 @@ Lista
   top: 25px;
   left: 25px;
   cursor: pointer;
+  z-index: 100000;
 }
