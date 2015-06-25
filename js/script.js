@@ -114,6 +114,10 @@ $(".fruta").attr("src",function(){
   return "img/svg/"+fruta+"_"+atribute+".svg";
 });
 
+$(".fruta").click(function(){
+  alert($(this).attr("src"));
+})
+
 $("#link-harmonia").click(function(){
   $("#overlay-wrapper").show();
   $("#overlay-harmonia").show();
