@@ -104,27 +104,29 @@ function getUrlParameter(sParam)
 			}
 	}
 }
-
+var text = "";
 $(".fruta").attr("src",function(){
   var atribute = getAtribute($(this).attr("class").split(" "));
   console.log(atribute);
   var fruta = pickFruit(getUrlParameter("fruta"));
+  text += fruta + " " + atribute + "\n";
+  $("#orga");
   return "img/svg/"+fruta+"_"+atribute+".svg";
 });
 
 $("#link-harmonia").click(function(){
   $("#overlay-wrapper").show();
-  $("#organico-harmonia").show();
+  $("#overlay-harmonia").show();
 });
 
 $("#link-diferenca").click(function(){
   $("#overlay-wrapper").show();
-  $("#organico-diferenca").show();
+  $("#overlay-diferenca").show();
 });
 
 $("#link-concentracao").click(function(){
   $("#overlay-wrapper").show();
-  $("#organico-concentracao").show();
+  $("#overlay-concentracao").show();
 });
 
 $("#hide").click(function(){
