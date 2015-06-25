@@ -35,3 +35,41 @@ main {
 {
   background-color: #F9F9C7;
 }
+
+.small-down {
+  padding-bottom: 50px;
+}
+
+.small-top {
+  padding-top: 50px;
+}
+
+/*
+Lista
+*/
+
+.checklist {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.checklist li {
+  text-indent: -.7em;
+  list-style: none;
+  text-align: left;
+}
+
+.checklist li:before {
+  content: "• ";
+}
+
+.checklist .right:before {
+  content: "\2714  ";
+  color:green;
+}
+
+.checklist .wrong:before {
+  content: "\2718  ";
+  color:red;
+}

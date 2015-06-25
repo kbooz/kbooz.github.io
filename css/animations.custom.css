@@ -310,3 +310,126 @@ Waiting
     -ms-transform:  translate(0px,0px)  rotate(0deg) ;
   }
 }
+
+.jumping{
+  animation: jumpingFrames ease 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: jumpingFrames ease 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: jumpingFrames ease 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: jumpingFrames ease 2s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: jumpingFrames ease 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes jumpingFrames{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  10% {
+    transform:  translate(0px,4px)  ;
+  }
+  29% {
+    transform:  translate(0px,-40px)  ;
+  }
+  40% {
+    transform:  translate(0px,-40px)  ;
+  }
+  60% {
+    transform:  translate(0px,0px)  ;
+  }
+  100% {
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+@-moz-keyframes jumpingFrames{
+  0% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+  10% {
+    -moz-transform:  translate(0px,4px)  ;
+  }
+  29% {
+    -moz-transform:  translate(0px,-40px)  ;
+  }
+  40% {
+    -moz-transform:  translate(0px,-40px)  ;
+  }
+  60% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-webkit-keyframes jumpingFrames {
+  0% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+  10% {
+    -webkit-transform:  translate(0px,4px)  ;
+  }
+  29% {
+    -webkit-transform:  translate(0px,-40px)  ;
+  }
+  40% {
+    -webkit-transform:  translate(0px,-40px)  ;
+  }
+  60% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-o-keyframes jumpingFrames {
+  0% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+  10% {
+    -o-transform:  translate(0px,4px)  ;
+  }
+  29% {
+    -o-transform:  translate(0px,-40px)  ;
+  }
+  40% {
+    -o-transform:  translate(0px,-40px)  ;
+  }
+  60% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-ms-keyframes jumpingFrames {
+  0% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+  10% {
+    -ms-transform:  translate(0px,4px)  ;
+  }
+  29% {
+    -ms-transform:  translate(0px,-40px)  ;
+  }
+  40% {
+    -ms-transform:  translate(0px,-40px)  ;
+  }
+  60% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+  100% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+}

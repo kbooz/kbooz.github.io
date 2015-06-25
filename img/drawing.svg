@@ -58,7 +58,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="201.00043"
+     inkscape:cx="930.11518"
      inkscape:cy="506.9765"
      inkscape:document-units="px"
      inkscape:current-layer="g5144"
@@ -111,14 +111,25 @@
     <path
        inkscape:connector-curvature="0"
        id="path5148"
-       d="m 267.23697,335.01279 c 0,0 -165.22585,-46.51601 -222.6771,36.2208 -57.45125,82.73682 -95.24875,213.66717 -64.93578,253.34772 30.312958,39.68056 225.28135,-48.60033 287.61288,-289.56852 z"
+       d="m 387.38624,335.01279 c 0,0 165.22585,-46.51601 222.6771,36.2208 57.45125,82.73682 95.24875,213.66717 64.93578,253.34772 -30.31296,39.68056 -225.28135,-48.60033 -287.61288,-289.56852 z"
        style="fill:#668000;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <circle
        r="308.5"
        cy="542.59943"
-       cx="351.5"
+       cx="-303.1232"
        id="circle5150"
-       style="fill:#ff7f2a" />
+       style="fill:#ff7f2a"
+       transform="scale(-1,1)" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 476.62321,336.3622 c 0,0 29,24 30,54 1,30 -17,64 -4,73"
+       id="path4286"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 450.62321,540.3622 c 0,0 -38,19 -53,33"
+       id="path4288"
+       inkscape:connector-curvature="0" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -296,10 +307,10 @@
      inkscape:groupmode="layer"
      id="layer8"
      inkscape:label="Rosto Convencional"
-     style="display:none">
+     style="display:inline">
     <g
        id="g5347"
-       transform="translate(140,0)">
+       transform="matrix(-1,0,0,1,514.62321,0)">
       <circle
          style="display:inline;fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:0.625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="circle4295"
