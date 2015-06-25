@@ -44,6 +44,10 @@ main {
   padding-top: 50px;
 }
 
+.section-heading{
+  font-weight: 600;
+}
+
 /*
 Lista
 */
@@ -84,16 +88,15 @@ Lista
   color: white;
   z-index: 9999;
   display: none;
+  overflow-y: scroll;
 }
 
 .overlay-content-box{
-  width: 80%;
-  height:50%;
-  position: fixed;
-  left: 10%;
-  top: 25%;
-  overflow-y: auto;
+  position: relative;
+  height: auto;
   display: none;
+  padding: 70px 50px;
+
 }
 
 #hide{
