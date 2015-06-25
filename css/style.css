@@ -49,9 +49,9 @@ Lista
 */
 
 .checklist {
-    list-style: none;
-    padding:0;
-    margin:0;
+  list-style: none;
+  padding:0;
+  margin:0;
 }
 
 .checklist li {
@@ -72,4 +72,39 @@ Lista
 .checklist .wrong:before {
   content: "\2718  ";
   color:red;
+}
+
+#overlay-wrapper{
+  position: fixed;
+  top: 0;
+  left:0;
+  bottom:0;
+  right: 0;
+  background-color: black;
+  color: white;
+  z-index: 9999;
+  display: none;
+}
+
+.overlay-content-box{
+  width: 80%;
+  height:50%;
+  position: fixed;
+  left: 10%;
+  top: 25%;
+  overflow-y: auto;
+  display: none;
+}
+
+#hide{
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
 }

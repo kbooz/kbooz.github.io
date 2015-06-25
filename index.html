@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" ng-app="organica">
+<html lang="pt-br">
 
 <head>
 
@@ -10,13 +10,6 @@
   <meta name="author" content="ALTERAR">
 
   <title>Os Orgânicos</title>
-
-  <!-- AngularJs  -->
-  <script src="js/angular.min.js"></script>
-	<script src="js/angular-route.min.js"></script>
-	<script src="js/chart.js"></script>
-	<script src="js/angular-chart.min.js"></script>
-  <script src="js/script-angular.js"></script>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -31,11 +24,12 @@
   <link rel="stylesheet" href="css/animations.custom.css" type="text/css">
 
 
-  <!-- Plugin Jquery CSS -->
+  <!-- Plugin Angular CSS -->
   <link rel="stylesheet" href="css/angular-chart.css" type="text/css">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/creative.css" type="text/css">
+  <link rel="stylesheet" href="css/pizza.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -48,6 +42,21 @@
 </head>
 
 <body id="page-top">
+
+  <div id="overlay-wrapper">
+      <div id="organico-harmonia" class="overlay-content-box">
+          HARMONIA PORRA
+      </div>
+      <div id="organico-concentracao" class="overlay-content-box">
+          CONCENTRAÇÃO PORRA
+      </div>
+      <div id="organico-diferenca" class="overlay-content-box">
+          DIFERENÇA PORRA
+      </div>
+      <div id="hide">
+        &#x2718;
+      </div>
+  </div>
 
   <nav id="mainNav" class="navbar navbar-default navbar-fixed-top affix-top">
     <div class="container-fluid">
@@ -83,16 +92,174 @@
     </div>
   </nav>
 
-<main ng-view></main>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<main>
+
+  <header id="index">
+    <div class="header-content">
+      <div class="header-content-inner">
+        <hr>
+        <h1>Orgânicos?</h1>
+        <hr>
+        <p>#####</p>
+        <a href="#sobre" class="btn btn-primary btn-xl page-scroll">Saiba mais</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="bg-primary" id="sobre">
+    <div class="container bg-primary">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <hr class="light">
+          <h2 class="section-heading">O que são?</h2>
+          <hr class="light">
+          <img class="fruta waiting fechado">
+          <div class="clear"></div>
+          <p>
+            É o resultado de um sistema de produção agrícola que busca manejar de forma equilibrada o solo e demais recursos naturais (água, plantas, animais, insetos, etc)
+          </p>
+          <div class="content">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-dark">
+    <div class="container text-center">
+      <div class="row">
+        <h2 class="section-heading">Quais são os seus benefícios?</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-primary small-top small-down">
+    <div class="container bg-primary">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <hr class="light">
+          <h2 class="section-heading">São mais saudáveis</h2>
+          <hr class="light">
+          <img class="fruta jumping feliz">
+          <div class="clear"></div>
+          <p>
+            Durante a produção não é usado nenhum tipo de herbicidas, fertilizantes ou pesticidas,  qualquer semente modificada geneticamente e aditivos químicos
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-pattern-yellow small-top small-down" id="organico-harmonia">
+    <div class="container bg-light-yellow">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <hr class="primary">
+          <h2 class="section-heading">Trabalham em harmonia com o solo</h2>
+          <hr class="primary">
+          <img class="fruta jumping feliz">
+          <div class="clear"></div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <a id="link-harmonia" href="#organico-harmonia" class="btn btn-primary btn-xl page-scroll">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-dark">
+    <div class="container text-center">
+      <div class="row">
+        <h2 class="section-heading">Quais as diferenças com o alimento convencional?</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-primary" id="organico-diferenca">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-6 col-md-6 text-center">
+          <div class="service-box">
+            <img class="fruta happy surpreso">
+            <h3>Organicos</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 text-center">
+          <div class="service-box">
+            <img class="fruta breathing convencional">
+            <h3>Convencionais</h3>
+            <p></p>
+          </div>
+        </div>
+        <a id="link-diferenca" href="#organico-diferenca" class="btn btn-default btn-xl page-scroll">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid" id="organico-convencional-producao">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Produção Orgânica x Produção Convencional</h2>
+          <hr class="primary">
+        </div>
+      </div>
+      <div class="row no-gutter">
+        <div class="col-lg-12  text-center">
+          <div class="col-md-6">
+            <img src="img/prod_org.png" class="img-responsive">
+            <h3>Organica</h3>
+            <p>Durante a produção não é usado nenhum tipo de herbicidas, fertilizantes ou pesticidas, além de proibir qualquer semente modificada geneticamente e aditivos químicos sintéticos como corantes, aromatizantes e emulsificantes.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="img/prod_trad.png" class="img-responsive">
+            <h3>Convencional</h3>
+            <p>Neste tipo de plantio, o mais comum deles, é frequente o uso de herbicidas, fertilizantes e pesticidas. Estes produtos podem contaminar o solo e os lençóis de água. Quando estas substâncias são usadas em quantidades acima do recomendado, é comum que insetos e até pássaros morram no meio da plantação por absorverem os químicos. Quem comer estes produtos poderá sofrer com dores de cabeça, alergia e coceiras, entre outras alterações e até doenças.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-pattern-yellow container-fluid" id="organico-concentracao">
+    <div class="container bg-light-yellow">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <br>
+          <h2 class="section-heading">Concentração de Agentes Nocivos a Saúde </h2>
+          <hr class="primary">
+        </div>
+      </div>
+      <div class="row no-gutter text-center">
+        <div class="col-lg-6 col-sm-6 text-center">
+          <div id="concentracao-organicos"></div>
+          <h3>Organicos</h3>
+          <ul data-pie-id>
+          </ul>
+
+        </div>
+        <div class="col-lg-6 col-sm-6 text-center">
+          <div id="concentracao-convencional"></div>
+          <h3>Convencionais</h3>
+          <ul data-pie-id="concentracao-convencional" data-o>
+          </ul>
+        </div>
+        <a id="link-concentracao" href="#organico-concentracao" class="btn btn-default btn-xl page-scroll">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+</main>
+
 
 <!-- Plugin JQuery -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/jquery.fittext.min.js"></script>
 <script src="js/wow.min.js"></script>
-
 <script src="js/script.js"></script>
 
 </body>
