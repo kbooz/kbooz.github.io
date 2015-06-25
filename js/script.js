@@ -8,11 +8,19 @@
 
 (function($) {
     "use strict"; // Start of use strict
-    
-    $(".fruta").attr("src",function(){
+
+    // $(".fruta").replaceWith(function(){
+    //   var atribute = getAtribute($(this).attr("class").split(" "));
+    //   var fruta = pickFruit(getUrlParameter("fruta"));
+    //   return "<img src='img/svg/"+fruta+"_"+atribute+".svg' class='"+$(this).attr("class")+"'";
+    // });
+    $(".fruta").each(function(){
       var atribute = getAtribute($(this).attr("class").split(" "));
       var fruta = pickFruit(getUrlParameter("fruta"));
-      return "./img/svg/"+fruta+"_"+atribute+".svg";
+      var classes = $(this).attr("class");
+      var src = "img/svg/"+fruta+"_"+atribute+".svg";
+      var img = "<img src='"+src+"' class='"+classes+"'>";
+      $(this).replaceWith(img);
     });
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
