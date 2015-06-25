@@ -55,13 +55,6 @@
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
-    $(".fruta").attr("src",function(){
-    	var atribute = getAtribute($(this).attr("class").split(" "));
-    	console.log(atribute);
-    	var fruta = pickFruit(getUrlParameter("fruta"));
-    	return "img/svg/"+fruta+"_"+atribute+".svg";
-    });
-
 })(jQuery); // End of use strict
 
 function randomFruit()
@@ -111,6 +104,13 @@ function getUrlParameter(sParam)
 			}
 	}
 }
+
+$(".fruta").attr("src",function(){
+  var atribute = getAtribute($(this).attr("class").split(" "));
+  console.log(atribute);
+  var fruta = pickFruit(getUrlParameter("fruta"));
+  return "img/svg/"+fruta+"_"+atribute+".svg";
+});
 
 $("#link-harmonia").click(function(){
   $("#overlay-wrapper").show();
