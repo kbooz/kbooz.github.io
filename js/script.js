@@ -110,7 +110,7 @@ $(".fruta").attr("src",function(){
   console.log(atribute);
   var fruta = pickFruit(getUrlParameter("fruta"));
   text += fruta + " " + atribute + "\n";
-
+  $("#te").text(text);
   return "img/svg/"+fruta+"_"+atribute+".svg";
 });
 
