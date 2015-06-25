@@ -114,7 +114,8 @@ $(".fruta").attr("src",function(){
   return "img/svg/"+fruta+"_"+atribute+".svg";
 });
 
-$(".fruta").click(function(){
+$(".fruta").click(function(e){
+  e.preventDefault();
   alert($(this).attr("src"));
 })
 
