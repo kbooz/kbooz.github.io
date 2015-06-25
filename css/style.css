@@ -106,7 +106,7 @@ Lista
   font-family: sans-serif;
   text-align: center;
   line-height: 50px;
-  position: relative;
+  position: fixed;
   top: 25px;
   left: 25px;
   cursor: pointer;
