@@ -1,4 +1,4 @@
-var frutas = ["laranja","pimentao","goiaba","morango"];
+var frutas = ["laranja","pimentao","morango"];
 
 var app = angular.module("organica",['ngRoute','chart.js'])
 .config(['$routeProvider',
