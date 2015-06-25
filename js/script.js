@@ -8,7 +8,12 @@
 
 (function($) {
     "use strict"; // Start of use strict
-
+    
+    $(".fruta").attr("src",function(){
+      var atribute = getAtribute($(this).attr("class").split(" "));
+      var fruta = pickFruit(getUrlParameter("fruta"));
+      return "./img/svg/"+fruta+"_"+atribute+".svg";
+    });
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
@@ -104,16 +109,8 @@ function getUrlParameter(sParam)
 			}
 	}
 }
-// var text = "";
-$(document).ready(function(){
-$(".fruta").attr("src",function(){
-  var atribute = getAtribute($(this).attr("class").split(" "));
-  var fruta = pickFruit(getUrlParameter("fruta"));
-  // text += fruta + " " + atribute + "\n";
-  // $("#te").text(text);
-  return "./img/svg/"+fruta+"_"+atribute+".svg";
-});
-});
+
+
 
 $(".fruta").click(function(e){
   e.preventDefault();
