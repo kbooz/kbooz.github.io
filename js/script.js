@@ -105,12 +105,14 @@ function getUrlParameter(sParam)
 	}
 }
 // var text = "";
+$(document).ready(function(){
 $(".fruta").attr("src",function(){
   var atribute = getAtribute($(this).attr("class").split(" "));
   var fruta = pickFruit(getUrlParameter("fruta"));
   // text += fruta + " " + atribute + "\n";
   // $("#te").text(text);
   return "./img/svg/"+fruta+"_"+atribute+".svg";
+});
 });
 
 $(".fruta").click(function(e){
