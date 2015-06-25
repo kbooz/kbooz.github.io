@@ -147,26 +147,40 @@ $("#hide").click(function(){
 })
 
 // Chart
-var data = [
+var data1 = [
     {
-        value: 300,
+        value: 60,
         color:"#F7464A",
         highlight: "#FF5A5E",
-        label: "Red"
+        label: "Nutrientes"
     },
     {
-        value: 50,
+        value: 5,
+        color: "#AEAEAE",
+        highlight: "#CECECE",
+        label: "Aditivos"
+    },
+    {
+        value: 20,
         color: "#46BFBD",
         highlight: "#5AD3D1",
-        label: "Green"
+        label: "Agrotóxicos"
     },
     {
-        value: 100,
+        value: 15,
         color: "#FDB45C",
         highlight: "#FFC870",
-        label: "Yellow"
+        label: "Fertilizantes"
     }
-]
-var ctx = $("#concentracao-organico-chart").get(0).getContext("2d");
+];
+var data2 = [
+    {
+        value: 100,
+        color:"#F7464A",
+        highlight: "#FF5A5E",
+        label: "Nutrientes"
+    }
+];
 // This will get the first returned node in the jQuery collection.
-var myNewChart = new Chart(ctx).Pie(data,{});
+var organico_chart = new Chart($("#concentracao-organico-chart").get(0).getContext("2d")).Pie(data1,{});
+var convencional_chart = new Chart($("#concentracao-convencional-chart").get(0).getContext("2d")).Pie(data2,{});
