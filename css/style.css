@@ -2,6 +2,10 @@ main {
   margin:0;padding:0;height:100%;width:100%;
 }
 
+body{
+  font-size:20px;
+}
+
 .fruta {
   height: 200px;
   width: 200px;
@@ -96,9 +100,9 @@ Lista
   left:0;
   bottom:0;
   right: 0;
-  background-color: black;
+  background-color: #2A9F44;
   color: white;
-  z-index: 9999;
+  z-index: 9998;
   display: none;
   overflow-y: scroll;
 }
@@ -108,7 +112,7 @@ Lista
   height: auto;
   display: none;
   padding: 70px 50px;
-
+  z-index: 9999;
 }
 
 #hide{
