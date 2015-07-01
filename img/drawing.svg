@@ -15,12 +15,40 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   inkscape:export-filename="/home/lucas/Imagens/laranja_triste.png"
+   inkscape:export-filename="/home/lucas/Imagens/morango_triste.png"
    inkscape:export-xdpi="299.96786"
    inkscape:export-ydpi="299.96786"
    sodipodi:docname="drawing.svg">
   <defs
      id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker6283"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path6285"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path6013"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
     <inkscape:path-effect
        effect="skeletal"
        id="path-effect4436"
@@ -61,7 +89,7 @@
      inkscape:cx="129.12353"
      inkscape:cy="556.15917"
      inkscape:document-units="px"
-     inkscape:current-layer="g5757"
+     inkscape:current-layer="g4287"
      showgrid="false"
      inkscape:snap-object-midpoints="false"
      inkscape:snap-others="true"
@@ -86,7 +114,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Laranja"
-     style="display:inline">
+     style="display:none">
     <g
        id="g4299"
        transform="translate(120,35.737202)">
@@ -135,7 +163,8 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Morango"
-     style="display:none">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <g
        id="g4481"
        transform="translate(0,67.142272)">
@@ -733,7 +762,7 @@
        inkscape:connector-curvature="0" />
   </g>
   <g
-     style="display:inline"
+     style="display:none"
      id="g5757"
      inkscape:groupmode="layer"
      inkscape:label="Feliz o copiar">
@@ -1041,7 +1070,7 @@
        inkscape:connector-curvature="0" />
   </g>
   <g
-     style="display:none"
+     style="display:inline"
      id="g4287"
      inkscape:groupmode="layer"
      inkscape:label="Surpreso">
@@ -1109,14 +1138,35 @@
        ry="4.5"
        transform="matrix(0.83715345,0.54696809,-0.54696809,0.83715345,0,0)" />
     <path
-       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 476.5625,683.6122 c 0,0 -12.5,-23.4375 -29.6875,-23.4375 -17.1875,0 -54.6875,12.5 -50,32.8125 4.6875,20.3125 15.625,46.875 43.75,43.75 28.125,-3.125 51.5625,-32.8125 35.9375,-53.125 z"
-       id="path4315"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:6.44248867;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 515.45237,717.60272 -176.09278,12.64386 c 0,0 12.46674,-88.50705 59.21704,-88.50705 46.7503,0 74.80047,-7.22506 98.17562,21.6752 23.37515,28.90026 18.70012,54.18799 18.70012,54.18799 z"
+       id="path6007"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccssc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 371.875,653.9247 0,76.5625"
+       id="path6347"
        inkscape:connector-curvature="0" />
     <path
-       inkscape:connector-curvature="0"
-       id="path4309"
-       d="m 413.66619,720.24239 c 6.69836,10 19.70107,13 32.70379,9 13.00271,-4 7.09238,-22 -2.36413,-24 -9.45652,-2 -34.27988,-13 -30.33966,15 z"
-       style="fill:#d70000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 407.8125,644.5497 1.5625,79.6875"
+       id="path6349"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 442.1875,641.4247 6.25,76.5625"
+       id="path6351"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 479.6875,649.2372 1.5625,67.1875"
+       id="path6353"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 346.875,703.9247 c 0,0 50,-29.6875 160.9375,-23.4375"
+       id="path6357"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
