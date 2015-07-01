@@ -64,6 +64,10 @@ body{
   font-weight: 600;
 }
 
+.btn {
+  margin-bottom:25px;
+}
+
 /*
 Lista
 */
