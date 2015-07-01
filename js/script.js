@@ -122,7 +122,6 @@ function getUrlParameter(sParam)
 
 $(".fruta").click(function(e){
   e.preventDefault();
-  alert($(this).attr("src"));
 })
 
 $("#link-harmonia").click(function(){
