@@ -53,8 +53,8 @@
 
     $(".overlay-content-box").fitText(
         1.2, {
-            minFontSize: '35px',
-            maxFontSize: '65px'
+            minFontSize: '24px',
+            maxFontSize: '50px'
         }
     );
 

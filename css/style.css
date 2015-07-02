@@ -125,15 +125,18 @@ Lista
 #hide{
   width: 50px;
   height: 50px;
+  padding: 5px;
   font-size: 50px;
   font-family: sans-serif;
   text-align: center;
-  line-height: 50px;
+  line-height: 45px;
   position: fixed;
   top: 25px;
   left: 25px;
   cursor: pointer;
   z-index: 100000;
+  background-color: black;
+  color: white;
 }
 
 .google-maps  {
@@ -152,5 +155,8 @@ height: 100%;
 border: 0;
 }
 
+.overlay-content-box hr {
+  height:0px; visibility:hidden; margin: 10px;
+}
 
 header .header-content .header-content-inner p {font-weight: 400;   color: white;}
