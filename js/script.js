@@ -4,7 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
  var frutas = ["laranja","pimentao","morango"];
- var atributes = ["fechado","feliz","surpreso","convencional"];
+ var atributes = ["fechado","feliz","surpreso","convencional","lingua"];
 
 (function($) {
     "use strict"; // Start of use strict
