@@ -8,6 +8,13 @@
 	Bootstrap customizantions
 	*/
 
+	.container {
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
 	.col-xs-15,
 	.col-sm-15,
 	.col-md-15,
@@ -120,10 +127,19 @@
 		background-color: rgba(122,145,83,0.1);
 	}
 
+	img.main-logo,img.logo {
+		max-height: 100px;
+		margin-bottom: 20px;
+	}
+
 	
 	@media (min-width: 768px) { 
 		#navbar {
 			margin-top: 10px;
+		}
+		img.main-logo,img.logo {
+			max-height: 150px;
+			margin-bottom: 0;
 		}
 	}
 
@@ -213,3 +229,10 @@
 	}
 
 
+/*
+	projects
+ */
+	
+	.projects>p, .projects>img {
+		margin-bottom: 40px;
+	}
