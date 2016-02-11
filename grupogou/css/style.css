@@ -144,6 +144,25 @@
 	}
 
 /*
+	Carousel
+ */
+	.carousel-caption .logo {
+		width: auto;
+		padding:15px;
+		background-color: rgba(0,0,0,.3);
+		text-align: center;
+	}
+
+	.carousel-caption .logo.fc {
+		padding-left: -15px;
+	}
+	.carousel-caption .logo img{
+		width: 100%;
+	}
+
+
+
+/*
 	Seções
 	*/
 	section {
