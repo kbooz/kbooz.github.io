@@ -41,7 +41,9 @@ angular.module('ionic.example', ['ionic'])
 		var mapOptions = {
 			center: myLatlng,
 			zoom: 16,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			mapTypeControl:false,
+			streetViewControl: false
 		};
 
 		// Cria o Mapa
