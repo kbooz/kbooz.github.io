@@ -11,7 +11,7 @@ angular.module('ionic.example', ['ionic'])
 	$scope.view = {}; //Debug visual
 	$scope.myself.Latlng = new google.maps.LatLng(-22.962868,-43.170048);
 	$scope.bizz.radius = 50;
-	$scope.myself.radius = 50;
+	$scope.myself.radius = 80;
 
 	google.maps.event.addDomListener(window, 'load', initializeMap);
 
@@ -77,8 +77,8 @@ angular.module('ionic.example', ['ionic'])
 		$scope.myself.marker = marker;
 		debug.myself.marker = marker;
 
-		$scope.myself.circle = createCircle('#0000FF',$scope.map,$scope.myself.Latlng,$scope.bizz.radius);
-		debug.myself.circle = $scope.myself.circle;
+		$scope.myself.marker.circle = createCircle('#0000FF',$scope.map,$scope.myself.Latlng,$scope.myself.radius);
+		debug.myself.circle = $scope.myself.marker.circle;
 
 		//Atualiza o Debug
 		$scope.view.lugar = $scope.map.getCenter().lat() +","+$scope.map.getCenter().lng();
@@ -88,7 +88,7 @@ angular.module('ionic.example', ['ionic'])
 			var center_ = $scope.map.getCenter();
 			$scope.myself.marker.setPosition(center_);
 			$scope.view.lugar = center_.lat() + "," + center_.lng();
-			$scope.myself.circle.setCenter(center_);
+			$scope.myself.marker.circle.setCenter(center_);
 			// Atualiza a view
 			$scope.$apply();
 		});
@@ -104,21 +104,40 @@ angular.module('ionic.example', ['ionic'])
 				position: new google.maps.LatLng(places[i][0],places[i][1]),
 				map: $scope.map
 			});
+			$scope.bizz.markers[i].enabled = true;
 		}
-
 		var infowindow = new google.maps.InfoWindow({content: "creating..."});
 
 		for (var i = 0; i <$scope.bizz.markers.length; i++) {
 			var contentString = "<div>Distância em metros:<br><span ng-bind='distance("+i+")'></span></div>";
 			var compiled = $compile(contentString)($scope);
+
+			//Create infowindow
 			google.maps.event.addListener($scope.bizz.markers[i], 'click', (createInfoWindow)($scope.map,$scope.bizz.markers[i],compiled[0],infowindow));
-			$scope.bizz.markers[i].circle = createCircle('#00FF00',$scope.map,$scope.bizz.markers[i].position,$scope.bizz.radius);
+
+			//Create circle
+			var circle = createCircle('#00FF00',$scope.map,$scope.bizz.markers[i].position,$scope.bizz.radius);
+
+			$scope.bizz.markers[i].circle = circle;
 		}
 	}
 
 	var updateMarker = function (marker)
 	{
+		marker.set('label','x');
+		marker.enabled = false;
+		marker.circle.setOptions({strokeColor:'red',fillColor:'red'});
+	}
 
+	$scope.updateBizzRadius = function ()
+	{
+		for (var i = $scope.bizz.markers.length - 1; i >= 0; i--) {
+			$scope.bizz.markers[i].circle.set('radius',parseInt(document.getElementById('bizz-radius').value));
+		}
+	}
+	$scope.updateMyselfRadius = function ()
+	{
+			$scope.myself.marker.circle.set('radius',parseInt(document.getElementById('myself-radius').value));
 	}
 
 	var getBizz = function(){
@@ -149,18 +168,14 @@ angular.module('ionic.example', ['ionic'])
 		var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 		var d = R * c;
 		d= ~~ d;  /// ~~ -> transforma o float no inteiro mais próximo
-		if(d<($scope.bizz.radius*2) && m1.label != "x")
-		{
-			m1.set('label','x');
-			m1.circle.setOptions({strokeColor:'red',fillColor:'red'});
-			console.log(m1);
-		}
-		//checkInterpolation(p1,$scope.bizz.radius,p2,$scope.bizz.radius);
-		return ~~d; // returns the distance in meter
-	};
 
-	var checkInterpolation = function(p1,mpRadm,p2,m2Rad)
-	{
+		//Checa se há overlap dos radius
+		if((d<($scope.bizz.radius+$scope.myself.radius)) && m1.enabled)
+		{
+			updateMarker(m1);
+		}
+
+		return ~~d; // returns the distance in meter
 	};
 
 	var createCircle = function (color,map,center,radius)
