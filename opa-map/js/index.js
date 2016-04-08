@@ -84,15 +84,19 @@ angular.module('ionic.example', ['ionic'])
 		$scope.view.lugar = $scope.map.getCenter().lat() +","+$scope.map.getCenter().lng();
 
 		// Aciona a função toda vez que o centro do mapa se alterar
-		google.maps.event.addDomListener($scope.map, 'center_changed', function(){
-			var center_ = $scope.map.getCenter();
-			$scope.myself.marker.setPosition(center_);
-			$scope.view.lugar = center_.lat() + "," + center_.lng();
-			$scope.myself.marker.circle.setCenter(center_);
-			// Atualiza a view
-			$scope.$apply();
-		});
+		google.maps.event.addDomListener($scope.map, 'center_changed', dragMyself);
+		google.maps.event.addDomListener($scope.map, 'drag', dragMyself);
 	}
+
+	var dragMyself = function(){
+		var center_ = $scope.map.getCenter();
+		$scope.myself.marker.setPosition(center_);
+		$scope.view.lugar = center_.lat() + "," + center_.lng();
+		$scope.myself.marker.circle.setCenter(center_);
+		// Atualiza a view
+		$scope.$apply();
+	}
+
 
 	var createMarkers = function ()
 	{
