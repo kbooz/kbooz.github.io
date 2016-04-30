@@ -25,7 +25,6 @@ module.exports = Link;
 
 var Link = require('../_modules/link/link');
 var app = require('./app.js');
-
 $(function() {
 	$('#play').click(function(event){
 		if(!jQuery.browser.mobile)
@@ -36,7 +35,8 @@ $(function() {
 				$('#video').slideDown(700);
 			});
 		}
-	})
+	});
+
 });
 
 //Typeform
