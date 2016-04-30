@@ -5236,6 +5236,14 @@ body {
   margin: 20px 0;
 }
 
+#hero .up {
+  margin: 50px 0 30px;
+}
+
+#play {
+  margin: 30px 0 0;
+}
+
 #video {
   display: none;
 }
