@@ -27,7 +27,7 @@ var Link = require('../_modules/link/link');
 var app = require('./app.js');
 var app = require('./vimeo.js');
 $(function() {
-	$('#vimeo_player').vimeo("setVolume", 0);
+	$('#vimeo_player').vimeo("setVolume", 1);
 	$('#play').click(function(event){
 		if(true)
 		{
@@ -35,7 +35,9 @@ $(function() {
 			$('#hero-container').fadeOut(600,function(){
 				// $(".up").hide();
 				// $('#video').slideDown(700);
-				$("#video-container").fadeIn(600,function(){});
+				$('#vimeo_player').vimeo("play");
+				$("#video-container").fadeIn(600,function(){
+				});
 			});
 		}
 	});
