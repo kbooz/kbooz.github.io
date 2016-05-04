@@ -5256,6 +5256,15 @@ h2 {
   margin: 30px 0 0;
 }
 
+@media (max-width: 480px) {
+  #hero {
+    height: 450px;
+  }
+  #hero .row {
+    margin: 0 0 5px;
+  }
+}
+
 #video {
   display: none;
 }
@@ -5287,12 +5296,14 @@ h2 {
 }
 
 #info ul {
-  margin: 0 0 50px;
+  height: 200px;
+  margin-bottom: 50px;
   padding: 0;
   min-height: 120px;
 }
 
 #info li {
+  text-align: left;
   list-style: none;
   padding-bottom: 10px;
 }
