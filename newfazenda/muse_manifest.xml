@@ -1,4 +1,4 @@
-<manifest alg="2" build="2015.1.2.344" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="fazendaculinaria.com.br" resolutions="1x" timestamp="1462424545200">
+<manifest alg="2" build="2015.1.2.344" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="kbooz.github.io/newfazenda,fazendaculinaria.com.br" resolutions="1x" timestamp="1462424895174">
   <folder name="css">
     <file name="site_global.css" crc="131700929"/>
     <file name="master_a-master.css" crc="4147881419" ref="index"/>
@@ -40,5 +40,5 @@
     <file name="footer-bg.jpg" crc="8433002" ref="index"/>
     <file name="logo.png" crc="3890303765" seo="true" ref="index"/>
   </folder>
-  <file name="index.html" crc="532265895" seo="true" mt="1462424482995" redirect="true"/>
+  <file name="index.html" crc="4139574558" seo="true" mt="1462424482995" redirect="true"/>
 </manifest>
