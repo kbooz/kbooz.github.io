@@ -1,0 +1,44 @@
+<manifest alg="2" build="2015.1.2.344" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="kbooz.github.io/newfazenda,fazendaculinaria.com.br" resolutions="1x" timestamp="1462424895174">
+  <folder name="css">
+    <file name="site_global.css" crc="131700929"/>
+    <file name="master_a-master.css" crc="4147881419" ref="index"/>
+    <file name="index.css" crc="242628604" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="207176553" ref="index"/>
+    <file name="museutils.js" crc="3790713428" ref="index"/>
+    <file name="whatinput.js" crc="84559013" ref="index"/>
+    <file name="webpro.js" crc="329496574" ref="index"/>
+    <file name="musewpslideshow.js" crc="394033048" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="4265131668" ref="index"/>
+    <file name="touchswipe.js" crc="497316881" ref="index"/>
+    <file name="pie.js" crc="3827607177" ref="index"/>
+    <file name="jquery.watch.js" crc="4244854265" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="3918880840" ref="index"/>
+    <file name="musewpdisclosure.js" crc="4234230767" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="hero_slide_1.jpg" crc="3915878798" seo="true" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="logo-menor.png" crc="4123317005" seo="true" ref="index"/>
+    <file name="cooking-1013455_1920.jpg" crc="4173325292" ref="index"/>
+    <file name="italian-cuisine-1047390_640.jpg" crc="224816478" ref="index"/>
+    <file name="food3.jpg" crc="4128375196" ref="index"/>
+    <file name="food2.jpg" crc="282780780" ref="index"/>
+    <file name="food4.jpg" crc="174534688" ref="index"/>
+    <file name="juice1.jpg" crc="29390504" ref="index"/>
+    <file name="juice3.jpg" crc="3772614233" ref="index"/>
+    <file name="juice2.jpg" crc="4207685471" ref="index"/>
+    <file name="juice4.jpg" crc="3883861411" ref="index"/>
+    <file name="museu.jpg" crc="481137631" ref="index"/>
+    <file name="chef-1209161_640.jpg" crc="62924499" ref="index"/>
+    <file name="eat-814464_640.jpg" crc="3821314787" ref="index"/>
+    <file name="office-336368_640.jpg" crc="454006852" ref="index"/>
+    <file name="morning-819362_640.jpg" crc="499586828" ref="index"/>
+    <file name="blogger-336371_1280.jpg" crc="450106105" ref="index"/>
+    <file name="footer-bg.jpg" crc="8433002" ref="index"/>
+    <file name="logo.png" crc="3890303765" seo="true" ref="index"/>
+  </folder>
+  <file name="index.html" crc="4139574558" seo="true" mt="1462424482995" redirect="true"/>
+</manifest>
