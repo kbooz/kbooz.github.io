@@ -5286,8 +5286,13 @@ h2 {
   margin-bottom: 25px;
 }
 
-#info h2, #info h3 {
+#info h2 {
   color: black;
+}
+
+#info h3 {
+  color: #008eca;
+  height: 110px;
 }
 
 #info .btn-info {
