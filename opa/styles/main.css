@@ -5275,7 +5275,6 @@ h2 {
 }
 
 #info {
-  background-color: #008eca;
   padding: 25px 0 0;
 }
 
@@ -5287,12 +5286,28 @@ h2 {
   margin-bottom: 25px;
 }
 
-.blue li, .blue h3 {
+#info h2, #info h3 {
+  color: black;
+}
+
+#info .btn-info {
+  background-color: white;
+  color: #008eca;
+  border-color: #008eca;
+}
+
+#info .btn-info:hover {
+  background-color: #31b0d5;
+  border-color: #31b0d5;
   color: white;
 }
 
-.blue h2 {
-  color: inherit;
+.blue {
+  background-color: #008eca;
+}
+
+.blue li, .blue h2 {
+  color: white;
 }
 
 #info ul {
@@ -5300,6 +5315,7 @@ h2 {
   margin-bottom: 50px;
   padding: 0;
   min-height: 120px;
+  color: #4D4D4D;
 }
 
 #info li {
@@ -5352,7 +5368,7 @@ h2 {
   margin: 30px 0;
 }
 
-#social h2, #parceiros h2 {
+#parceiros h2 {
   color: #008eca;
 }
 
