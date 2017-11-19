@@ -1,25 +1,252 @@
+/* http://paletton.com/#uid=53o0U0kllllaFw0g0qFqFg0w0aF */
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,900i');
 
 html, body {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
+
 body {
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    font-family: 'Proza Libre', sans-serif;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  position: relative;
 }
 
 .container {
-    padding: 0 25%;
+  display: flex;
+  height: 90vh;
+  flex-flow: column;
+  justify-content: center;
+}
+
+a {
+  color: black;
+  position: relative;
+  text-decoration: none;
+}
+
+a:before {
+  content: ' ';
+  position: absolute;
+  background-color: #bde3fc;
+
+  height: 5px;
+  left: 5px;
+  bottom: 8px;
+  width: 100%;
+  z-index: -10;
+  transition: left 0.5s ease, width 0.5s ease;
+}
+
+a:after {
+  background-color: #70b7e5;
+  content: ' ';
+  position: absolute;
+  height: 5px;
+  left: calc(100% + 5px);
+  width: 0px;
+  right: 0;
+  bottom: 8px;
+  z-index: -9;
+  transition: background-color 1s ease, left 0.5s ease, width 0.5s ease;
+}
+
+a:hover:after, span.animator:hover a:after {
+  left: 5px;
+  width: 100%;
+}
+
+a:hover:before, span.animator:hover a:before {
+  left: 5px;
+  width: 0%;
+}
+
+a.no-underline:after, a.no-underline:before {
+  content: null;
+}
+
+#intro {
+  font-family: "Merriweather", serif;
+  font-size: 2em;
+  padding: 0 10%;
+}
+
+#intro>div {
+  display: flex;
+  flex-flow: row;
+}
+
+#intro, #intro a {
+  color: black;
+}
+
+#intro .hello {
+  padding-right: 10px;
+  padding-top: 5px;
+  font-size: .8em;
+  font-weight: lighter;
+}
+
+#intro .hello span {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  color: #999;
+}
+
+#intro p:first-child {
+  margin-top: 0;
+}
+
+
+#intro p:last-child {
+  margin-bottom: 0;
+}
+
+
+#intro .working {
+  font-size: .8em;
+}
+
+#intro a:hover {
+  transform: scale()
+}
+
+#intro a.huge:before, #intro a.huge:after {
+  bottom: 6px;
+}
+
+#intro a.huge:before {
+  background-color: #ee5eb6;
+}
+
+#intro a.huge:after {
+  background-color: #ec008c;
 }
 
 #links {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  list-style: none;
+  text-align: center;
 }
 
-#links li {
-    display: inline-block;
+#links ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+#links ul li {
+  display: inline-block;
+}
+
+#links ul li a {
+  margin:  10px 15px;
+}
+
+#links ul li a:after, #links ul li a:before {
+  bottom: 2px;
+}
+
+#jobs {
+  padding: 0 10%;
+  /*
+  margin: -15vh 10% 0;
+
+  background-color: #333;
+  position: relative;
+  color: white;
+  */
+}
+
+#jobs h1 {
+  text-align: center;
+  font-weight: 900;
+  font-style: italic;
+  font-family: "Merriweather", serif;
+  font-size: 2.5em;
+
+}
+
+#jobs h1 span {
+  font-weight: 400;
+  font-size: .7em;
+}
+
+@media (max-width: 780px) {
+  .container {
+    height: 90vh;
+  }
+
+  #intro {
+    padding: 0 5%;
+  }
+  
+  #intro > div {
+    flex-flow: column;
+  }
+
+  #intro .hello {
+    padding: 0 0 10px;
+  }
+
+  #intro .hello span {
+    transform: none;
+    writing-mode: horizontal-tb;
+  }
+
+  #intro a {
+    word-break: normal;
+  }
+
+  #links {
+    position: relative;
+  }
+  
+  #links ul li {
+    font-size: 1.5em;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  
+  #links ul li a:after, #links ul li a:before {
+    bottom: 4px;
+  }
+}
+
+body {
+  transition: background-color 1s ease;
+}
+
+body.invert {
+  background-color: #1c1c1c;
+}
+
+body, body #intro, body #intro a {
+  transition: color 1s ease;
+}
+
+body.invert, body.invert #intro, body.invert #intro a {
+  color: #eaeaea;
+}
+
+body.invert #intro a:before {
+  background-color: #27658e;
+}
+
+body.invert #intro a:after {
+  background-color: #144b70;
+}
+
+
+body.invert #intro a.huge:before {
+  background-color: #ec008c;
+}
+
+body.invert #intro a.huge:after {
+  background-color: #ce007a;
 }
